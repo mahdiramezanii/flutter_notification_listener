@@ -10,6 +10,7 @@ import './event.dart';
 typedef EventCallbackFunc = void Function(NotificationEvent evt);
 
 /// NotificationsListener
+@pragma('vm:entry-point')
 class NotificationsListener {
   static const CHANNELID = "flutter_notification_listener";
   static const SEND_PORT_NAME = "notifications_send_port";
